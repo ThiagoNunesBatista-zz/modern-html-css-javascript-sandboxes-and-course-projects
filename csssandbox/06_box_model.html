@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Box Model / Margin & Padding</title>
+</head>
+
+<style>
+
+  /* CSS Reset */
+  * {
+    margin: 0;
+    padding: 0;
+
+    /* Don't add padding to the size of the element father */
+    box-sizing: border-box;
+  }
+
+  .box {
+    background: #f4f4f4;
+    border: #777 solid;
+    width: 500px;
+    
+
+    /* Padding on all sides */
+    padding: 20px;
+
+    /* Padding Per Side */
+    /* This padding will overwrite the above padding */
+
+    /* padding-top: 5px;
+    padding-right: 10px;
+    padding-bottom: 30px; 
+    padding-left: 1px; */
+
+    padding: 5px 10px 30px 10px;
+
+
+    /* Margin on All sides */
+    margin:20px;
+
+    /* Margin Per Side */
+    /* This margin will overwrite the above margin */
+
+    /* margin-top: 5px;
+    margin-right: 10px;
+    margin-bottom: 30px; 
+    margin-left: 1px; */
+
+    margin: 5px 10px 30px 10px;
+
+
+  }
+</style>
+<body>
+  <div class="box">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum nisi 
+      voluptate sint eius totam saepe beatae ullam nam vero qui.</p>
+  </div>
+
+  <div class="box">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum nisi 
+      voluptate sint eius totam saepe beatae ullam nam vero qui.</p>
+  </div>
+
+  <div class="box">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum nisi 
+      voluptate sint eius totam saepe beatae ullam nam vero qui.</p>
+  </div>
+</body>
+</html>
