@@ -1,6 +1,6 @@
 /* Utilities */
 .container {
-  padding: 5rem 2rem;
+  padding: 1rem 2.5rem;
 }
 
 /* Navbar */
@@ -23,9 +23,32 @@ nav .socialIcons {
 }
 
 /* Showcase */
+
+.showcase {
+  height: 45rem;
+}
+
 .showcase .container div {
-  text-align: center;
-  width: 100%;
+  text-align: left;
+  width: 90%;
+}
+
+/* Articles */
+.gridPicks {
+  grid-template-columns: 1fr;
+}
+
+.firstTwoColumnsArticle {
+  grid-template-columns: 1fr;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-gap: 2rem;
+}
+
+.pickCamera {
+  grid-column-start: 1;
+  grid-column-end: 1;
+  grid-template-columns: 1fr;
 }
 
 /* Footer */
