@@ -1,0 +1,42 @@
+/* Utilities */
+.container {
+  padding: 5rem 2rem;
+}
+
+/* Navbar */
+nav .container {
+  display: grid;
+  grid-template-areas:
+    'logo'
+    'list';
+  grid-gap: 1.5rem;
+  text-align: center;
+  padding: 0rem 2rem 2rem;
+}
+
+nav .container img {
+  margin: 1rem auto;
+}
+
+nav .socialIcons {
+  display: none;
+}
+
+/* Showcase */
+.showcase .container div {
+  text-align: center;
+  width: 100%;
+}
+
+/* Footer */
+footer .container {
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    'logoArea'
+    'emailNewsletter'
+    'siteLinks'
+    'joinClub'
+    'paragraph';
+
+  text-align: center;
+}
