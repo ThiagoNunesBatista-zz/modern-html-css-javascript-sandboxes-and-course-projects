@@ -1,0 +1,55 @@
+console.log('Number to String\n')
+let value = String(5)
+console.log(value, typeof value)
+
+console.log('\nBoolean to String\n')
+value = String(true)
+console.log(value, typeof value)
+value = String(false)
+console.log(value, typeof value)
+
+console.log('\nDate to String\n')
+value = String(new Date())
+console.log(value, typeof value)
+
+console.log('\nArray to String\n')
+value = String([1, 2, 3, 4])
+console.log(value, typeof value)
+
+console.log('\nUsing toString() method\n')
+// Using this method the application will work the same way
+// Two Examples:
+value = (5).toString()
+console.log(value, typeof value)
+value = (true).toString()
+console.log(value, typeof value)
+
+console.log('\nString to Number\n')
+value = Number('5')
+console.log(value, typeof value)
+value = Number('99.88')
+console.log(value, typeof value)
+
+console.log('\nBoolean to Number\n')
+value = Number(true)
+console.log(value, typeof value)
+value = Number(false)
+console.log(value, typeof value)
+value = Number(null)
+console.log('null also become', value, typeof value)
+value = Number('Thiago Nunes Batista')
+console.log('strings that cannot be converted are', value, typeof value)
+value = Number([1, 2, 3, 4, 5])
+console.log('the same thing happens for arrays:', value, typeof value)
+
+console.log('\nUsing the parseInt() method\n')
+value = parseInt('100.30')
+console.log(value, typeof value)
+value = parseInt(167.54)
+console.log(value, typeof value)
+
+console.log('\nUsing parseFloat() method\n')
+value = parseFloat(100)
+console.log(value, typeof value)
+value = parseFloat('11.32')
+console.log(value, typeof value)
