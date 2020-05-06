@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Forms & Input</title>
+</head>
+
+<body>
+  <form method="POST" action="process.php">
+    <div>
+      <label for="name">Name</label><br>
+      <input id="name" type="text" placeholder="Your Name">
+    </div>
+
+    <div>
+      <label for="email">Email</label><br>
+      <input type="email" name="email" id="email" value="thiago@email.com">
+    </div>
+
+    <div>
+      <label for="message">Message</label><br>
+      <textarea id="message" cols="30" rows="10"></textarea>
+    </div>
+
+    <div>
+      <label for="gender">Gender</label>
+      <select name="gender" id="gender">
+        <option value="Male" selected>Male</option>
+        <option value="Female">Female</option>
+      </select>
+    </div>
+
+    <div>
+      <label for="age">Age</label><br>
+      <input type="number" name="age" id="age">
+    </div>
+
+    <div>
+      <label for="birthDate">Birth Date</label><br>
+      <input type="date" name="birthDate" id="birthDate">
+    </div>
+
+    <div>
+      <label for="membership">Membership</label><br><br>
+      <input type="radio" name="membership" value="simple" id="membership">Simple<br>
+      <input type="radio" name="membership" value="standard" id="membership">Standard<br>
+      <input type="radio" name="membership" value="premium" id="membership" checked>Premium<br>
+    </div>
+
+    <div>
+      <label for="likes">I Like...</label><br><br>
+      <input type="checkbox" name="likes" value="Bike" id="likes">Bike<br>
+      <input type="checkbox" name="likes" value="Motorcycle" id="likes" checked>Motorcycle<br>
+      <input type="checkbox" name="likes" value="Car" id="likes" checked>Car<br>
+    </div>
+
+    <div>
+      <input type="reset" value="Reset 1">
+      <button type="reset">Reset 2</button>
+    </div>
+
+    <div>
+      <input type="submit" value="Submit 1">
+      <button type="submit">Submit 2</button>
+    </div>
+
+  </form>
+</body>
+
+</html>
